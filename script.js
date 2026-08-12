@@ -10,21 +10,21 @@
    -------------------------------------------------------------------------- */
 const testimonials = [
   {
-    name: "Prénom Nom",
+    name: "X",
     role: "Exemple — Commerce, Guadeloupe",
-    text: "Ceci est un avis d'exemple. Remplacez ce texte par le vrai retour de votre client une fois la mission terminée.",
+    text: "X",
     rating: 5
   },
   {
-    name: "Prénom Nom",
+    name: "X",
     role: "Exemple — Indépendant, Martinique",
-    text: "Deuxième avis d'exemple, pour montrer que le carrousel gère plusieurs témoignages avec la navigation ci-dessous.",
+    text: "X",
     rating: 5
   },
   {
-    name: "Prénom Nom",
+    name: "X",
     role: "Exemple — Profession libérale, Guyane",
-    text: "Troisième avis d'exemple. Supprimez ou dupliquez ces objets dans le tableau `testimonials` selon vos besoins.",
+    text: "X",
     rating: 5
   }
 ];
