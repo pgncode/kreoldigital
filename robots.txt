@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kreoldigital.fr/sitemap.xml
