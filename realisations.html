@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations — Kreol'Digital</title>
+<meta name="description" content="Nos réalisations pour les commerces et indépendants de Guadeloupe, Martinique et Guyane : sites internet, fiches Google, boutiques en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Kreol'Digital — accueil">
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><radialGradient id="bgHeader" cx="80%" cy="15%" r="90%">
+          <stop offset="0%" stop-color="#1C6864"/><stop offset="45%" stop-color="#0F4C4A"/><stop offset="100%" stop-color="#0A3735"/>
+        </radialGradient></defs>
+        <circle cx="100" cy="100" r="97" fill="url(#bgHeader)"/>
+        <g transform="translate(100,100) scale(0.87) translate(-100,-100)">
+          <path d="M32,100 C48,77 62,77 78,100 C94,123 108,123 124,100" fill="none" stroke="#E3A93E" stroke-width="7" stroke-linecap="round"/>
+          <path d="M124,100 L140,100 L150,64 L162,136 L172,100 L184,100" fill="none" stroke="#EF5B3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="78" cy="100" r="4.5" fill="#FAF7F0"/><circle cx="184" cy="100" r="6" fill="#FAF7F0"/>
+        </g>
+      </svg>
+      <span class="brand-word">Kreol<em>'</em>Digital</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="index.html#services">Services</a>
+      <a href="realisations.html" aria-current="page">Réalisations</a>
+      <a href="index.html#process">Comment ça marche</a>
+      <a href="index.html#avis">Avis</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <a href="index.html#contact" class="btn btn-coral nav-cta">Devis gratuit</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO (mur de projets) ============ -->
+  <section class="work-hero">
+    <div class="wrap">
+      <p class="eyebrow">Nos réalisations</p>
+      <h1 class="hero-title work-hero-title">Ce qu'on a livré,<br>chez de vraies entreprises d'ici.</h1>
+      <p class="hero-sub">Un mur qui grandit à chaque livraison. Chaque carte, un besoin réel et la solution mise en place.</p>
+    </div>
+  </section>
+
+  <!-- ============ MUR DE PROJETS ============ -->
+  <section class="work" id="work">
+    <div class="wrap">
+      <!--
+        Le mur de projets est pour l'instant en "à venir". Quand les premières
+        réalisations seront prêtes à être présentées, remplacez le bloc
+        .work-empty ci-dessous par <div class="work-grid" id="workGrid"></div>
+        et remplissez le tableau `projects` dans script.js — la grille
+        s'adapte alors automatiquement au nombre de cartes.
+      -->
+      <div class="work-empty">
+        <p class="work-empty-label">À venir</p>
+        <p class="work-empty-text">Les premières réalisations seront bientôt présentées ici.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAS DE PAGE ============ -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-text">
+        <p class="eyebrow">Votre projet, la prochaine carte du mur ?</p>
+        <h2 class="section-title section-title--light">Devis gratuit sous 24h,<br>sans engagement.</h2>
+        <p class="contact-lead">Que vous ayez déjà une idée précise ou juste besoin d'y voir plus clair, le premier échange ne coûte rien.</p>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-cards">
+          <a href="tel:+590690504887" class="contact-card">
+            <span class="contact-label">Téléphone</span>
+            <span class="contact-value">06 90 50 48 87</span>
+          </a>
+          <a href="mailto:p.godran@kreoldigital.fr" class="contact-card">
+            <span class="contact-label">E-mail</span>
+            <span class="contact-value">p.godran@kreoldigital.fr</span>
+          </a>
+          <div class="contact-card contact-card--static">
+            <span class="contact-label">Zone d'intervention</span>
+            <span class="contact-value">Guadeloupe · Martinique · Guyane</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-field">
+            <label for="cfName">Nom</label>
+            <input type="text" id="cfName" name="name" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="cfEmail">E-mail</label>
+            <input type="email" id="cfEmail" name="email" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="cfPhone">Téléphone <span>(optionnel)</span></label>
+            <input type="tel" id="cfPhone" name="phone" autocomplete="tel">
+          </div>
+          <div class="form-field">
+            <label for="cfMessage">Votre projet</label>
+            <textarea id="cfMessage" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-coral form-submit">Envoyer le message</button>
+          <p class="form-note">Ouvre votre messagerie avec le message prêt à envoyer à p.godran@kreoldigital.fr.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="footer-brand">Kreol'Digital</span>
+    <nav class="footer-links" aria-label="Liens légaux">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Confidentialité</a>
+    </nav>
+    <span class="footer-copy">© <span id="year"></span> Kreol'Digital — Prisca Godran. Tous droits réservés.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
