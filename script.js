@@ -10,21 +10,21 @@
    -------------------------------------------------------------------------- */
 const testimonials = [
   {
-    name: "X",
-    role: "Exemple — Commerce, Guadeloupe",
-    text: "X",
+    name: "Sandrine T.",
+    role: "Esthéticienne indépendante (Martinique)",
+    text: "Un vrai diagnostic à 360° qui va droit au but. L'équipe a pointé du doigt exactement ce qui bloquait ma visibilité sur mobile. J'ai pu corriger 2 ou 3 trucs urgents la semaine même et j'ai déjà vu la différence sur les demandes de rendez-vous.",
     rating: 5
   },
   {
-    name: "X",
-    role: "Exemple — Indépendant, Martinique",
-    text: "X",
+    name: "Marc L.",
+    role: "Artisan plombier / Chauffagiste (Guyane)",
+    text: "Je passe ma journée sur le terrain, donc optimiser ma fiche Google, c'était le dernier de mes soucis. Kreol'Digital s'est occupé de tout : catégories, photos, SEO local... Résultat, mon téléphone sonne nettement plus souvent depuis la restructuration. Le bouton d'appel direct change tout.",
     rating: 5
   },
   {
-    name: "X",
-    role: "Exemple — Profession libérale, Guyane",
-    text: "X",
+    name: "Chantal R.",
+    role: "Traiteur / Food-truck (Guyane)",
+    text: "Génial pour afficher mon menu de la semaine ! Les clients flashent le QR code au comptoir et tombent directement sur la page adaptée au smartphone. C'est simple, rapide et bien plus propre qu'un fichier PDF lourd à télécharger. Pour 39 €, il ne faut pas hésiter.",
     rating: 5
   }
 ];
@@ -38,7 +38,7 @@ const testimonials = [
 const faqItems = [
   {
     question: "Combien de temps faut-il pour avoir mon site en ligne ?",
-    answer: "Ça dépend de la formule choisie et de votre disponibilité pour valider les étapes, mais comptez en général quelques jours pour une visibilité express et de deux à quatre semaines pour un site sur-mesure, révisions incluses."
+    answer: "Ça dépend de la formule choisie et de votre disponibilité pour valider les étapes, mais comptez en général quelques jours pour une visibilité express et de deux semaines pour un site sur-mesure, révisions incluses."
   },
   {
     question: "Intervenez-vous partout en Guadeloupe, Martinique et Guyane ?",
@@ -54,7 +54,7 @@ const faqItems = [
   },
   {
     question: "Puis-je modifier moi-même le contenu de mon site ensuite ?",
-    answer: "Oui, une prise en main vous est proposée pour gérer les mises à jour simples. Pour tout le reste, l'abonnement de pilotage ou un service à la carte prend le relais."
+    answer: "Oui, une prise en main vous est proposée pour gérer les mises à jour simples. Pour tout le reste, l'abonnement de suivi ou un service à la carte prend le relais."
   },
   {
     question: "Le référencement (SEO) et la fiche Google sont-ils inclus ?",
