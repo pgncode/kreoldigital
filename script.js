@@ -10,21 +10,21 @@
    -------------------------------------------------------------------------- */
 const testimonials = [
   {
-    name: "Prénom Nom",
-    role: "Exemple — Commerce, Guadeloupe",
-    text: "Ceci est un avis d'exemple. Remplacez ce texte par le vrai retour de votre client une fois la mission terminée.",
+    name: "Chantal R.",
+    role: "Traiteur / Food-truck (Guyane)",
+    text: "Génial pour afficher mon menu de la semaine ! Les clients flashent le QR code au comptoir et tombent directement sur la page adaptée au smartphone. C'est simple, rapide et bien plus propre qu'un fichier PDF lourd à télécharger. Pour 39 €, il ne faut pas hésiter.",
     rating: 5
   },
   {
-    name: "Prénom Nom",
-    role: "Exemple — Indépendant, Martinique",
-    text: "Deuxième avis d'exemple, pour montrer que le carrousel gère plusieurs témoignages avec la navigation ci-dessous.",
+    name: "Sandrine T",
+    role: "Esthéticienne indépendante (Martinique)",
+    text: "Un vrai diagnostic à 360° qui va droit au but. Prisca a pointé du doigt exactement ce qui bloquait ma visibilité sur mobile. J'ai pu corriger 2 ou 3 trucs urgents la semaine même et j'ai déjà vu la différence sur les demandes de rendez-vous.",
     rating: 5
   },
   {
-    name: "Prénom Nom",
-    role: "Exemple — Profession libérale, Guyane",
-    text: "Troisième avis d'exemple. Supprimez ou dupliquez ces objets dans le tableau `testimonials` selon vos besoins.",
+    name: "David M.",
+    role: "Gérant de restaurant (Guadeloupe)",
+    text: "Honnêtement, je ne savais pas trop à quoi m'attendre pour 89 €, mais le rapport est tombé en 48h chrono. Ça m'a ouvert les yeux sur le nombre de clients qui ne me trouvaient pas à cause de petites erreurs sur ma fiche Google et mon site. Le plan d'action était très clair, sans jargon technique. Très bon investissement.",
     rating: 5
   }
 ];
