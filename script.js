@@ -17,7 +17,7 @@ const testimonials = [
   },
   {
     name: "Coming soon",
-    role: "X
+    role: "X",
     text: "X",
     rating: 5
   },
