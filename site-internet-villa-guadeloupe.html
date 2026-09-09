@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site internet pour villa en Guadeloupe | Réservez en direct — Kreol'Digital</title>
+<meta name="description" content="Un site qui capte vos réservations directes et vous fait économiser la commission des plateformes. Demande de séjour, calendrier synchronisé, acompte en ligne. À partir de 1 290 €.">
+<link rel="canonical" href="https://kreoldigital.fr/site-internet-villa-guadeloupe.html">
+<!-- Aperçu lors d'un partage sur WhatsApp, LinkedIn, Facebook.
+     og-image.jpg doit faire 1200x630 px et être placée à la racine. -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kreol'Digital">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://kreoldigital.fr/site-internet-villa-guadeloupe.html">
+<meta property="og:title" content="Site internet pour villa en Guadeloupe — Réservez en direct">
+<meta property="og:description" content="Captez vos réservations directes et réduisez la commission des plateformes. Demande de séjour, calendrier synchronisé, acompte en ligne.">
+<meta property="og:image" content="https://kreoldigital.fr/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* ==========================================================================
+     Polices auto-hébergées — fichiers dans /fonts/
+     Fraunces et Inter sont variables : un fichier couvre toutes les graisses.
+     L'italique de Fraunces n'existe qu'en Medium, mais on déclare la plage
+     complète pour que le navigateur l'utilise plutôt que de fabriquer un
+     faux italique.
+     ========================================================================== */
+  @font-face{
+    font-family:'Fraunces';
+    src:url('fonts/fraunces.woff2') format('woff2');
+    font-weight:100 900; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'Fraunces';
+    src:url('fonts/fraunces-italic.woff2') format('woff2');
+    font-weight:100 900; font-style:italic; font-display:swap;
+  }
+  @font-face{
+    font-family:'Inter';
+    src:url('fonts/inter.woff2') format('woff2');
+    font-weight:100 900; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'IBM Plex Mono';
+    src:url('fonts/ibm-plex-mono-400.woff2') format('woff2');
+    font-weight:400; font-style:normal; font-display:swap;
+  }
+  @font-face{
+    font-family:'IBM Plex Mono';
+    src:url('fonts/ibm-plex-mono-500.woff2') format('woff2');
+    font-weight:500; font-style:normal; font-display:swap;
+  }
+
+  :root{
+    /* Charte graphique Kreol'Digital v1.0 — valeurs officielles.
+       Les noms de variables restent ceux de cette page ; seules les
+       valeurs changent, pour rester alignée sur l'accueil. */
+    --ink:#1B2622;          /* Encre */
+    --ink-soft:#14403E;     /* Lagon très foncé, tiré du dégradé du logo */
+    --lagoon:#0F4C4A;       /* Lagon */
+    --lagoon-light:#1C6864;
+    --coral:#EF5B3B;        /* Corail */
+    --coral-light:#F47C5F;
+    --gold:#E3A93E;         /* Or de canne */
+    --sand:#DCEEEA;         /* Lagon clair — fonds secondaires */
+    --sand-deep:#E1DCCE;    /* Filets et bordures */
+    --paper:#FAF7F0;        /* Écume */
+    --white:#FFFFFF;
+    --ink-70: rgba(27,38,34,0.72);
+    --white-70: rgba(250,247,240,0.75);
+    --white-45: rgba(250,247,240,0.48);
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: var(--font-body);
+    background: var(--paper);
+    color: var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit;}
+
+  h1,h2,h3{font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;}
+
+  .wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 20px;} }
+
+  .eyebrow{
+    font-family:var(--font-mono); font-size:11.5px; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--lagoon);
+    display:flex; align-items:center; gap:9px; margin-bottom:16px;
+  }
+  .eyebrow::before{
+    content:""; width:22px; height:1.5px; background:var(--lagoon); display:block;
+  }
+  .eyebrow.on-dark{color:var(--gold);}
+  .eyebrow.on-dark::before{background:var(--gold);}
+
+  a:focus-visible, button:focus-visible{ outline:2.5px solid var(--coral); outline-offset:3px; }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background: rgba(250,247,240,0.88); /* Écume translucide */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(27,38,34,0.09);
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0;}
+  .brand{ display:flex; align-items:center; gap:10px; flex-shrink:0; }
+  .brand-mark{ width:34px; height:34px; }
+  .brand-word{ font-family: var(--font-display); font-weight:900; font-size:19px; color: var(--ink); }
+  .brand-word em{ font-style:normal; color: var(--coral); }
+  .nav-links{display:flex; gap:30px; font-size:14.5px; font-weight:500;}
+  .nav-links a{opacity:.8; transition:opacity .15s;}
+  .nav-links a:hover{opacity:1;}
+  .nav-cta{
+    font-size:14px; font-weight:600; background:var(--ink); color:var(--paper);
+    padding:11px 22px; border-radius:100px; transition: background .15s;
+  }
+  .nav-cta:hover{background:var(--lagoon);}
+  @media (max-width:900px){ .nav-links{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{background:var(--ink); color:var(--white); padding:80px 0 0; overflow:hidden;}
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr;
+    gap:56px; align-items:center; padding-bottom:70px;
+  }
+  @media (max-width:960px){ .hero-grid{grid-template-columns:1fr; padding-bottom:40px;} }
+  .hero h1{font-size:clamp(34px,4.6vw,56px); line-height:1.06; margin-bottom:22px;}
+  .hero h1 em{font-style:italic; color:var(--coral-light); font-weight:500;}
+  .hero p.lead{font-size:17.5px; color:var(--white-70); max-width:480px; margin-bottom:30px;}
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:30px;}
+  .hero-price-line{
+    font-size:13.5px; color:var(--white-45);
+    border-left:2px solid var(--lagoon-light); padding-left:14px; max-width:430px;
+  }
+  .hero-price-line strong{color:var(--white-70); font-weight:600;}
+
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px; border-radius:100px;
+    font-weight:600; font-size:14.5px; border:none; cursor:pointer;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-primary{background:var(--coral); color:var(--white);}
+  .btn-primary:hover{background:var(--coral-light);}
+  .btn-ghost{border:1px solid rgba(255,255,255,0.28); color:var(--white); background:transparent;}
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.6);}
+  .btn-dark{background:var(--ink); color:var(--paper);}
+  .btn-dark:hover{background:var(--lagoon);}
+
+  /* ---------- HERO VISUAL ---------- */
+  .hero-visual{position:relative; padding:20px 0 40px;}
+  .mock-browser{
+    background:var(--paper); border-radius:14px;
+    box-shadow:0 30px 70px rgba(0,0,0,0.45); overflow:hidden;
+    transform:rotate(1.5deg);
+  }
+  .mock-topbar{background:var(--sand-deep); padding:10px 14px; display:flex; align-items:center; gap:6px;}
+  .mock-dot{width:8px; height:8px; border-radius:50%; background:rgba(27,38,34,0.25);}
+  .mock-url{
+    margin-left:10px; font-family:var(--font-mono); font-size:10.5px;
+    color:var(--ink-70); background:var(--paper); padding:3px 10px; border-radius:6px;
+    flex:1; max-width:220px;
+  }
+  .mock-hero-img{
+    height:150px;
+    background:linear-gradient(135deg, var(--lagoon) 0%, var(--lagoon-light) 55%, var(--gold) 130%);
+    position:relative;
+  }
+  .mock-hero-img::after{
+    content:""; position:absolute; inset:0;
+    background:radial-gradient(circle at 75% 30%, rgba(255,255,255,0.35), transparent 45%);
+  }
+  .mock-content{padding:18px 20px 22px;}
+  .mock-line{height:9px; border-radius:4px; background:var(--sand-deep);}
+  .mock-line.w60{width:60%; margin-bottom:9px;}
+  .mock-line.w80{width:80%; margin-bottom:16px;}
+  .mock-btn{
+    display:inline-block; background:var(--coral); color:var(--white);
+    font-size:11px; font-weight:600; padding:8px 16px; border-radius:100px;
+  }
+  .whatsapp-bubble{
+    position:absolute; right:-10px; bottom:6px;
+    background:#25D366; color:#fff;
+    padding:12px 16px 12px 14px; border-radius:16px 16px 4px 16px;
+    font-size:12.5px; font-weight:500; max-width:210px;
+    box-shadow:0 14px 30px rgba(0,0,0,0.4);
+    animation: floatIn 2.4s ease-in-out infinite;
+  }
+  .whatsapp-bubble .who{
+    font-family:var(--font-mono); font-size:9.5px; opacity:.8;
+    margin-bottom:3px; letter-spacing:.04em;
+  }
+  @keyframes floatIn{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(-6px);} }
+  @media (prefers-reduced-motion: reduce){ .whatsapp-bubble{animation:none;} }
+  @media (max-width:960px){ .mock-browser{transform:none;} .whatsapp-bubble{right:8px;} }
+
+  /* ---------- SECTIONS ---------- */
+  .section-head{max-width:660px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(28px,3.2vw,38px); line-height:1.12; margin-bottom:14px;}
+  .section-head p{color:var(--ink-70); font-size:16px;}
+  .section-head.on-dark h2{color:var(--white);}
+  .section-head.on-dark p{color:var(--white-70);}
+
+  /* ---------- CALCULATEUR ---------- */
+  .cost{padding:96px 0; background:var(--sand);}
+  .cost-grid{display:grid; grid-template-columns:0.95fr 1.05fr; gap:56px; align-items:start;}
+  @media (max-width:920px){ .cost-grid{grid-template-columns:1fr;} }
+  .cost-intro p{color:var(--ink-70); font-size:15.5px; margin-bottom:16px;}
+  .cost-note{
+    font-size:12.5px; color:var(--ink-70); font-family:var(--font-mono);
+    line-height:1.6; border-left:2px solid var(--sand-deep); padding-left:14px; margin-top:24px;
+  }
+  .calc-card{
+    background:var(--paper); border:1px solid var(--sand-deep);
+    border-radius:18px; padding:32px;
+  }
+  .calc-field{margin-bottom:20px;}
+  .calc-field label{
+    display:block; font-family:var(--font-mono); font-size:11px;
+    text-transform:uppercase; letter-spacing:.06em; color:var(--ink-70); margin-bottom:8px;
+  }
+  .calc-field .row{display:flex; align-items:center; gap:14px;}
+  .calc-field input[type=range]{flex:1; accent-color:var(--coral);}
+  .calc-val{
+    font-family:var(--font-mono); font-size:14px; font-weight:500;
+    min-width:96px; text-align:right;
+  }
+  .calc-out{
+    border-top:1px solid var(--sand-deep); margin-top:26px; padding-top:24px;
+    display:grid; grid-template-columns:1fr 1fr; gap:20px;
+  }
+  @media (max-width:520px){ .calc-out{grid-template-columns:1fr;} }
+  .calc-out .item b{
+    display:block; font-family:var(--font-display); font-size:30px;
+    font-weight:600; line-height:1.1; margin-bottom:5px;
+  }
+  .calc-out .item.loss b{color:var(--coral);}
+  .calc-out .item.gain b{color:var(--lagoon);}
+  .calc-out .item span{font-size:12.5px; color:var(--ink-70); font-family:var(--font-mono); line-height:1.5;}
+  .calc-verdict{
+    margin-top:24px; background:var(--sand); border-radius:12px;
+    padding:16px 18px; font-size:14px; line-height:1.6;
+  }
+  .calc-verdict strong{color:var(--lagoon);}
+
+  /* ---------- INCLUS ---------- */
+  .included{padding:96px 0; background:var(--paper);}
+  .inc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:900px){ .inc-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .inc-grid{grid-template-columns:1fr;} }
+  .inc-card{
+    border:1px solid var(--sand-deep); border-radius:14px;
+    padding:26px 24px; background:var(--sand); transition:background .15s;
+  }
+  .inc-card:hover{background:var(--sand-deep);}
+  .inc-card .num{
+    font-family:var(--font-mono); font-size:11px; color:var(--coral);
+    letter-spacing:.08em; margin-bottom:12px;
+  }
+  .inc-card h3{font-size:17px; font-weight:600; margin-bottom:9px; font-family:var(--font-body);}
+  .inc-card p{font-size:13.5px; color:var(--ink-70); line-height:1.6;}
+
+  /* ---------- SYNCHRO ---------- */
+  .sync{background:var(--ink); color:var(--white); padding:96px 0;}
+  .sync-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;}
+  @media (max-width:920px){ .sync-grid{grid-template-columns:1fr;} }
+  .sync p.desc{color:var(--white-70); font-size:15.5px; margin-bottom:18px;}
+  .flow{
+    background:var(--ink-soft); border:1px solid rgba(255,255,255,0.09);
+    border-radius:18px; padding:30px;
+  }
+  .flow-step{display:flex; gap:16px; padding:14px 0;}
+  .flow-step + .flow-step{border-top:1px solid rgba(255,255,255,0.08);}
+  .flow-step .n{
+    font-family:var(--font-mono); font-size:11px; color:var(--gold);
+    padding-top:3px; flex-shrink:0;
+  }
+  .flow-step h4{font-size:15px; font-weight:600; margin-bottom:4px;}
+  .flow-step p{font-size:13.5px; color:var(--white-45); line-height:1.55;}
+
+  /* ---------- HONNÊTETÉ ---------- */
+  .honest{padding:96px 0; background:var(--sand);}
+  .honest-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:12px;}
+  @media (max-width:800px){ .honest-grid{grid-template-columns:1fr;} }
+  .honest-col{background:var(--paper); border:1px solid var(--sand-deep); border-radius:16px; padding:30px 28px;}
+  .honest-col h3{font-size:17px; font-weight:600; margin-bottom:16px; font-family:var(--font-body);}
+  .honest-col ul{list-style:none;}
+  .honest-col li{
+    font-size:14px; color:var(--ink-70); line-height:1.55;
+    padding-left:26px; position:relative; margin-bottom:12px;
+  }
+  .honest-col li::before{
+    position:absolute; left:0; top:0; font-family:var(--font-mono); font-size:13px;
+  }
+  .honest-col.yes li::before{content:"→"; color:var(--lagoon);}
+  .honest-col.no li::before{content:"×"; color:var(--coral);}
+
+  /* ---------- MÉTHODE ---------- */
+  .process{padding:96px 0; background:var(--paper);}
+  .process-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:40px;}
+  @media (max-width:800px){ .process-grid{grid-template-columns:1fr;} }
+  .process-step .num{
+    font-family:var(--font-mono); font-size:12px; color:var(--coral);
+    letter-spacing:.08em; margin-bottom:12px;
+  }
+  .process-step h3{font-size:18px; margin-bottom:10px;}
+  .process-step p{font-size:14px; color:var(--ink-70); line-height:1.6;}
+
+  /* ---------- TARIFS ---------- */
+  .pricing{padding:96px 0; background:var(--sand);}
+  .launch-banner{
+    background:var(--ink); color:var(--white); border-radius:14px;
+    padding:18px 24px; margin-bottom:36px;
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+    font-size:14.5px; line-height:1.5;
+  }
+  .launch-banner .tag{
+    font-family:var(--font-mono); font-size:10.5px; letter-spacing:.08em;
+    text-transform:uppercase; background:var(--coral); color:var(--white);
+    padding:5px 11px; border-radius:100px; flex-shrink:0;
+  }
+  .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:start;}
+  @media (max-width:900px){ .price-grid{grid-template-columns:1fr;} }
+  .price-card{
+    background:var(--paper); border:1px solid var(--sand-deep);
+    border-radius:18px; padding:32px 28px; height:100%;
+  }
+  .price-card--featured{border:2px solid var(--coral); position:relative;}
+  .price-card--featured .flag{
+    position:absolute; top:-12px; left:28px;
+    background:var(--coral); color:var(--white);
+    font-family:var(--font-mono); font-size:10px; letter-spacing:.08em;
+    text-transform:uppercase; padding:5px 12px; border-radius:100px;
+  }
+  .price-card h3{font-size:19px; margin-bottom:6px;}
+  .price-card .tagline{font-size:13.5px; color:var(--ink-70); margin-bottom:20px; line-height:1.5;}
+  .price-amount{display:flex; align-items:baseline; gap:10px; margin-bottom:4px;}
+  .price-amount .now{font-family:var(--font-display); font-size:34px; font-weight:600;}
+  .price-amount .was{font-size:15px; color:var(--ink-70); text-decoration:line-through;}
+  .price-sub{font-family:var(--font-mono); font-size:11.5px; color:var(--ink-70); margin-bottom:22px;}
+  .price-card ul{list-style:none; margin-bottom:24px;}
+  .price-card li{
+    font-size:13.5px; color:var(--ink-70); line-height:1.55;
+    padding-left:20px; position:relative; margin-bottom:10px;
+  }
+  .price-card li::before{
+    content:"·"; position:absolute; left:6px; top:-1px;
+    color:var(--coral); font-weight:700; font-size:16px;
+  }
+  .price-card .btn{width:100%; justify-content:center;}
+  .price-foot{
+    margin-top:28px; font-size:13px; color:var(--ink-70); line-height:1.7;
+    max-width:780px;
+  }
+
+  /* ---------- Formulaire : envoi via Web3Forms ----------
+   Le <form> conserve action et method : si ce script échoue, le navigateur
+   soumet quand même. Jamais de bouton mort. */
+(function initVillaForm(){
+  var form = document.getElementById('villaForm');
+  if (!form) return;
+
+  var statut = document.getElementById('villaStatus');
+  var bouton = form.querySelector('button[type="submit"]');
+  var libelle = bouton ? bouton.textContent : '';
+
+  function dire(texte, type){
+    if (!statut) return;
+    statut.textContent = texte;
+    statut.className = 'form-status is-' + type;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    dire('Envoi en cours…', 'pending');
+    if (bouton){ bouton.disabled = true; bouton.textContent = 'Envoi…'; }
+
+    var donnees = {};
+    new FormData(form).forEach(function(v, k){ donnees[k] = v; });
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(donnees)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data.success){
+        form.reset();
+        dire('Demande envoyée. Vous recevez votre audit sous 48h.', 'ok');
+      } else {
+        dire("L'envoi a échoué. Écrivez-nous à p.godran@kreoldigital.fr.", 'error');
+      }
+    })
+    .catch(function(){
+      dire("Connexion impossible. Écrivez-nous à p.godran@kreoldigital.fr ou appelez le 06 90 50 48 87.", 'error');
+    })
+    .finally(function(){
+      if (bouton){ bouton.disabled = false; bouton.textContent = libelle; }
+    });
+  });
+})();
+
+/* ---------- FAQ ---------- */
+  .faq{padding:96px 0; background:var(--paper);}
+  .faq-list{max-width:820px; border-top:1px solid var(--sand-deep);}
+  .faq-item{border-bottom:1px solid var(--sand-deep);}
+  .faq-q{
+    width:100%; background:none; border:none; cursor:pointer; text-align:left;
+    display:flex; align-items:center; justify-content:space-between; gap:20px;
+    padding:22px 0; font-size:16px; font-weight:600; color:var(--ink);
+  }
+  .faq-icon{
+    font-family:var(--font-mono); font-size:19px; color:var(--coral);
+    flex-shrink:0; transition:transform .2s ease;
+  }
+  .faq-item.open .faq-icon{transform:rotate(45deg);}
+  .faq-a{display:none; padding:0 0 24px; font-size:14.5px; color:var(--ink-70); line-height:1.7; max-width:700px;}
+  .faq-item.open .faq-a{display:block;}
+
+  /* ---------- CONTACT ---------- */
+  .contact{background:var(--ink); color:var(--white); padding:96px 0 88px;}
+  .contact-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px;}
+  @media (max-width:920px){ .contact-grid{grid-template-columns:1fr;} }
+  .contact h2{color:var(--white); font-size:clamp(28px,3.4vw,40px); margin-bottom:16px; line-height:1.1;}
+  .contact p.lead{color:var(--white-70); font-size:16px; max-width:420px; margin-bottom:30px;}
+  .contact-detail{margin-bottom:14px; font-size:14.5px;}
+  .contact-detail span.k{
+    font-family:var(--font-mono); font-size:11px; color:var(--white-45);
+    text-transform:uppercase; letter-spacing:.06em; display:block; margin-bottom:4px;
+  }
+  .form-card{
+    background:var(--ink-soft); border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px; padding:34px;
+  }
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:560px){ .form-row{grid-template-columns:1fr;} }
+  .field{margin-bottom:16px;}
+  .field label{
+    display:block; font-size:12px; font-family:var(--font-mono);
+    color:var(--white-45); margin-bottom:7px; text-transform:uppercase; letter-spacing:.05em;
+  }
+  .field input, .field select, .field textarea{
+    width:100%; background:var(--ink); border:1px solid rgba(255,255,255,0.14);
+    border-radius:8px; padding:11px 13px; color:var(--white);
+    font-size:14px; font-family:var(--font-body);
+  }
+  .field input::placeholder, .field textarea::placeholder{color:rgba(255,255,255,0.3);}
+  .field textarea{resize:vertical; min-height:90px;}
+  .form-card .btn-primary{width:100%; justify-content:center; margin-top:6px;}
+  .form-legal{font-size:11.5px; color:var(--white-45); margin-top:14px; line-height:1.6;}
+
+  /* ---------- RETOUR ACCUEIL ---------- */
+  .back-home{background:var(--sand); border-top:1px solid var(--sand-deep); padding:52px 0;}
+  .back-home-row{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:32px; flex-wrap:wrap;
+  }
+  .back-home h3{font-size:20px; margin-bottom:7px;}
+  .back-home p{font-size:14px; color:var(--ink-70); line-height:1.6; max-width:560px;}
+  .back-home-cta{flex-shrink:0;}
+  .back-home-cta svg{transition:transform .18s ease;}
+  .back-home-cta:hover svg{transform:translateX(3px);}
+
+  /* ---------- Formulaire : piège à robots et statut ---------- */
+  .hp{ display:none !important; }
+  .form-status{
+    font-size:13.5px; line-height:1.55; margin-top:12px;
+    padding:11px 14px; border-radius:10px; display:none;
+  }
+  .form-status.is-pending{ display:block; background:rgba(250,247,240,0.09); color:var(--white-70); }
+  .form-status.is-ok{ display:block; background:rgba(220,238,234,0.14); color:#DCEEEA; border-left:3px solid var(--gold); }
+  .form-status.is-error{ display:block; background:rgba(239,91,59,0.16); color:#FBD9D0; border-left:3px solid var(--coral); }
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink); border-top:1px solid rgba(255,255,255,0.08); padding:34px 0;}
+  .footer-row{
+    display:flex; justify-content:space-between; align-items:center;
+    flex-wrap:wrap; gap:14px; color:var(--white-45); font-size:13px;
+  }
+  .footer-links{display:flex; gap:20px;}
+  .footer-links a{opacity:.7;}
+  .footer-links a:hover{opacity:1;}
+
+  /* ---------- WHATSAPP FLOTTANT ---------- */
+  .wa-float{
+    position:fixed; right:20px; bottom:20px; z-index:60;
+    display:flex; align-items:center; gap:10px;
+    background:#25D366; color:#fff; font-size:14px; font-weight:600;
+    padding:13px 20px; border-radius:100px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.25);
+    transition:transform .15s ease;
+  }
+  .wa-float:hover{transform:translateY(-2px);}
+  @media (max-width:600px){ .wa-float span{display:none;} .wa-float{padding:15px;} }
+</style>
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand" aria-label="Kreol'Digital — accueil">
+      <svg class="brand-mark" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><radialGradient id="bgVillaHeader" cx="80%" cy="15%" r="90%">
+          <stop offset="0%" stop-color="#1C6864"/><stop offset="45%" stop-color="#0F4C4A"/><stop offset="100%" stop-color="#0A3735"/>
+        </radialGradient></defs>
+        <circle cx="100" cy="100" r="97" fill="url(#bgVillaHeader)"/>
+        <g transform="translate(100,100) scale(0.87) translate(-100,-100)">
+          <path d="M32,100 C48,77 62,77 78,100 C94,123 108,123 124,100" fill="none" stroke="#E3A93E" stroke-width="7" stroke-linecap="round"/>
+          <path d="M124,100 L140,100 L150,64 L162,136 L172,100 L184,100" fill="none" stroke="#EF5B3B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="78" cy="100" r="4.5" fill="#FAF7F0"/><circle cx="184" cy="100" r="6" fill="#FAF7F0"/>
+        </g>
+      </svg>
+      <span class="brand-word">Kreol<em>'</em>Digital</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#cout">Ce que vous perdez</a>
+      <a href="#inclus">Ce qui est inclus</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#faq">Questions</a>
+      <a href="index.html">Autres secteurs</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Audit gratuit</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow on-dark">Villas &amp; hébergements · Guadeloupe</div>
+      <h1>Votre villa, réservée <em>en direct</em>.</h1>
+      <p class="lead">Un site qui capte les voyageurs qui vous cherchent déjà par votre nom, et transforme leur demande en réservation sans passer par la commission des plateformes.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Audit gratuit de mon annonce</a>
+        <a href="#cout" class="btn btn-ghost">Calculer ce que je perds</a>
+      </div>
+      <div class="hero-price-line">
+        <strong>À partir de 1 290 €</strong> — rentabilisé en une saison dès qu'un quart de vos réservations passe en direct.
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mock-browser">
+        <div class="mock-topbar">
+          <span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span>
+          <span class="mock-url">votre-villa.fr</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-hero-img"></div>
+          <div class="mock-content">
+            <div class="mock-line w60"></div>
+            <div class="mock-line w80"></div>
+            <span class="mock-btn">Demander mes dates</span>
+          </div>
+        </div>
+        <div class="whatsapp-bubble">
+          <div class="who">Nouvelle demande</div>
+          Bonjour, la villa est-elle dispo la semaine du 12 ?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LE COÛT CHIFFRÉ ============ -->
+<section class="cost" id="cout">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Le calcul</div>
+      <h2>Chaque année, une part de vos revenus part en commission.</h2>
+      <p>Vous ne quitterez pas les plateformes, et ce n'est pas le but. Mais beaucoup de voyageurs vous découvrent sur Airbnb, tapent ensuite le nom de votre villa sur Google, et ne trouvent rien. Ceux-là repartent réserver sur la plateforme, et vous payez une commission pour un client qu'elle vous avait simplement fait rencontrer. S'y ajoutent les recommandations de bouche-à-oreille, et vos anciens voyageurs.</p>
+    </div>
+
+    <div class="cost-grid">
+      <div class="cost-intro">
+        <p>Déplacez les curseurs pour votre villa. Le calcul part du principe qu'un quart seulement de vos réservations bascule en direct la première année, ce qui est prudent.</p>
+        <p>Le reste continue d'arriver par les plateformes, comme aujourd'hui.</p>
+        <div class="cost-note">
+          Taux de commission indicatif. Airbnb et Booking proposent plusieurs modes de facturation, vérifiez celui qui s'applique à votre compte.
+        </div>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-field">
+          <label for="prixNuit">Prix moyen par nuit</label>
+          <div class="row">
+            <input type="range" id="prixNuit" min="80" max="600" step="10" value="250">
+            <span class="calc-val" id="prixNuitVal">250 €</span>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="nuits">Nuits louées par an</label>
+          <div class="row">
+            <input type="range" id="nuits" min="30" max="300" step="5" value="120">
+            <span class="calc-val" id="nuitsVal">120 nuits</span>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="taux">Commission plateforme</label>
+          <div class="row">
+            <input type="range" id="taux" min="3" max="25" step="1" value="15">
+            <span class="calc-val" id="tauxVal">15 %</span>
+          </div>
+        </div>
+
+        <div class="calc-out">
+          <div class="item loss">
+            <b id="outCommission">4 500 €</b>
+            <span>De commission versée<br>chaque année</span>
+          </div>
+          <div class="item gain">
+            <b id="outEconomie">1 125 €</b>
+            <span>Économisés par an<br>avec 25 % en direct</span>
+          </div>
+        </div>
+
+        <div class="calc-verdict" id="verdict"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CE QUI EST INCLUS ============ -->
+<section class="included" id="inclus">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Concrètement</div>
+      <h2>Pas une vitrine. Un outil de réservation.</h2>
+      <p>Chaque élément du site existe pour une raison précise : transformer un visiteur hésitant en demande de séjour qui arrive dans votre boîte mail.</p>
+    </div>
+
+    <div class="inc-grid">
+      <div class="inc-card">
+        <div class="num">01</div>
+        <h3>Demande de séjour</h3>
+        <p>Un formulaire court, avec les dates, le nombre de voyageurs et le message. Vous recevez la demande par e-mail et par WhatsApp, et vous confirmez.</p>
+      </div>
+      <div class="inc-card">
+        <div class="num">02</div>
+        <h3>Calendrier synchronisé</h3>
+        <p>Les dates déjà réservées sur Airbnb et Booking apparaissent grisées sur votre site, et vos réservations directes remontent vers les plateformes.</p>
+      </div>
+      <div class="inc-card">
+        <div class="num">03</div>
+        <h3>Français et anglais</h3>
+        <p>Vos visiteurs métropolitains et nord-américains lisent la même page dans leur langue. Sans widget de traduction automatique qui fait fuir.</p>
+      </div>
+      <div class="inc-card">
+        <div class="num">04</div>
+        <h3>Galerie qui charge vite</h3>
+        <p>Vos photos compressées et servies au bon format. Une galerie lente sur mobile fait perdre la moitié des visiteurs avant la première image.</p>
+      </div>
+      <div class="inc-card">
+        <div class="num">05</div>
+        <h3>Fiche Google reliée</h3>
+        <p>Votre villa trouvable sur Google Maps et dans les recherches locales, avec les avis, les photos et le lien vers votre site.</p>
+      </div>
+      <div class="inc-card">
+        <div class="num">06</div>
+        <h3>Acompte en ligne</h3>
+        <p>Le voyageur règle son acompte par carte. L'argent arrive directement sur votre compte, nous ne le touchons jamais. <em>Formule Direct.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYNCHRO ============ -->
+<section class="sync">
+  <div class="wrap">
+    <div class="section-head on-dark">
+      <div class="eyebrow on-dark">L'objection numéro un</div>
+      <h2>« Et si je me retrouve avec deux réservations le même jour ? »</h2>
+      <p>C'est la bonne question, et la réponse tient dans un choix de conception : votre site ne confirme jamais une réservation à votre place.</p>
+    </div>
+
+    <div class="sync-grid">
+      <div>
+        <p class="desc">Les plateformes partagent leurs calendriers par un flux qui se rafraîchit toutes les quelques heures, pas en temps réel. Un site qui réserve instantanément prend donc le risque d'accepter des dates qui viennent d'être prises ailleurs.</p>
+        <p class="desc">Nous fonctionnons autrement. Le calendrier affiché sert à orienter le voyageur, et vous gardez le dernier mot. Vous voyez la demande, vous vérifiez, vous confirmez sous 24h. Le double booking devient impossible.</p>
+        <p class="desc">Et un voyageur qui réserve une villa à plusieurs centaines d'euros la nuit accepte très bien d'attendre une réponse. Ça n'a jamais fait perdre une réservation.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flow-step">
+          <div class="n">01</div>
+          <div>
+            <h4>Le voyageur choisit ses dates</h4>
+            <p>Les périodes déjà prises sur les plateformes apparaissent grisées.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="n">02</div>
+          <div>
+            <h4>Vous recevez la demande</h4>
+            <p>Par e-mail et sur WhatsApp, avec les dates et le contact du voyageur.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="n">03</div>
+          <div>
+            <h4>Vous confirmez ou vous proposez autre chose</h4>
+            <p>Un clic. Vous seul décidez, après vérification de votre calendrier réel.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="n">04</div>
+          <div>
+            <h4>Les dates se bloquent partout</h4>
+            <p>Votre réservation directe remonte vers Airbnb et Booking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HONNÊTETÉ ============ -->
+<section class="honest">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Soyons clairs</div>
+      <h2>Ce qu'un site fait, et ce qu'il ne fera pas.</h2>
+      <p>Autant le dire avant de travailler ensemble plutôt qu'après.</p>
+    </div>
+
+    <div class="honest-grid">
+      <div class="honest-col yes">
+        <h3>Ce que ça change vraiment</h3>
+        <ul>
+          <li>Ceux qui vous découvrent sur une plateforme puis cherchent votre nom réservent chez vous</li>
+          <li>Les recommandations de bouche-à-oreille atterrissent quelque part</li>
+          <li>Vos anciens voyageurs reviennent sans commission</li>
+          <li>Vous fixez vos conditions : durée minimale, acompte, règles de la maison</li>
+          <li>Vous récupérez les coordonnées de vos clients, ce que les plateformes vous refusent</li>
+        </ul>
+      </div>
+      <div class="honest-col no">
+        <h3>Ce qu'il ne faut pas en attendre</h3>
+        <ul>
+          <li>Un site ne remplace pas les plateformes, il complète</li>
+          <li>Il n'apporte pas de voyageurs qui ne vous connaissaient pas, du jour au lendemain</li>
+          <li>Il ne se remplit pas tout seul : les photos et les disponibilités, c'est vous</li>
+          <li>Le référencement met plusieurs mois à produire ses effets</li>
+          <li>Sans un minimum de mises à jour, il vieillit et cesse de convertir</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTHODE ============ -->
+<section class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">La méthode</div>
+      <h2>En ligne avant la prochaine saison.</h2>
+      <p>Trois étapes, un interlocuteur unique, et un délai qu'on tient.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="num">01 · Jour 1</div>
+        <h3>On regarde votre annonce ensemble</h3>
+        <p>Un appel de trente minutes. Je passe en revue votre annonce existante, votre taux d'occupation et votre saisonnalité, et je vous dis franchement si un site vaut le coup dans votre cas.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">02 · Semaine 1 à 2</div>
+        <h3>Vous fournissez, je construis</h3>
+        <p>Photos, descriptifs, tarifs par saison et accès en lecture à vos calendriers. Je m'occupe du reste, textes compris, et vous validez chaque page avant la suivante.</p>
+      </div>
+      <div class="process-step">
+        <div class="num">03 · Semaine 3</div>
+        <h3>Mise en ligne et prise en main</h3>
+        <p>Le site passe en ligne, la synchronisation est testée sur des dates réelles, et je vous montre en une heure comment gérer vos demandes au quotidien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TARIFS ============ -->
+<section class="pricing" id="tarifs">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Tarifs</div>
+      <h2>Le prix est affiché, et il ne bouge pas en cours de route.</h2>
+      <p>40 % à la commande, le solde à la mise en ligne. Révisions comprises jusqu'à validation.</p>
+    </div>
+
+    <!-- Pour retirer l'offre de lancement : supprimer ce bloc et les <span class="was"> dans les cartes -->
+    <div class="launch-banner">
+      <span class="tag">Offre de lancement</span>
+      <div>Les trois premières villas bénéficient d'un tarif réduit, en échange du droit de montrer le site en référence et d'un témoignage. Offre valable jusqu'au 31 décembre 2026.</div>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Villa Essentiel</h3>
+        <p class="tagline">Pour capter les demandes directes et exister ailleurs que sur les plateformes.</p>
+        <div class="price-amount">
+          <span class="now">790 €</span>
+          <span class="was">1 290 €</span>
+        </div>
+        <div class="price-sub">Paiement unique · Livré en 2 à 3 semaines</div>
+        <ul>
+          <li>5 à 6 pages, français et anglais</li>
+          <li>Galerie photo optimisée mobile</li>
+          <li>Formulaire de demande de séjour</li>
+          <li>Notification e-mail et WhatsApp</li>
+          <li>Fiche Google Business reliée</li>
+          <li>Textes rédigés et hébergement première année</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark">Demander un devis</a>
+      </div>
+
+      <div class="price-card price-card--featured">
+        <span class="flag">Le plus demandé</span>
+        <h3>Villa Direct</h3>
+        <p class="tagline">Pour gérer réservations et acomptes depuis votre site, calendriers synchronisés.</p>
+        <div class="price-amount">
+          <span class="now">1 190 €</span>
+          <span class="was">1 890 €</span>
+        </div>
+        <div class="price-sub">Paiement unique · Abonnement Saison obligatoire</div>
+        <ul>
+          <li>Tout ce que contient Villa Essentiel</li>
+          <li>Calendrier de disponibilités sur le site</li>
+          <li>Synchronisation avec Airbnb et Booking</li>
+          <li>Encaissement de l'acompte par carte</li>
+          <li>Tarifs et durée minimale par saison</li>
+          <li>Aucun logiciel tiers à payer en plus</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Demander un devis</a>
+      </div>
+
+      <div class="price-card">
+        <h3>Abonnement Saison</h3>
+        <p class="tagline">Un site d'hébergement qui n'est pas tenu à jour cesse de convertir en une saison.</p>
+        <div class="price-amount">
+          <span class="now">69 €</span>
+          <span class="was">/ mois</span>
+        </div>
+        <div class="price-sub">Sans engagement · 89 €/mois avec la formule Direct</div>
+        <ul>
+          <li>Mise à jour des tarifs et disponibilités</li>
+          <li>Remplacement des photos à chaque saison</li>
+          <li>Maintenance, sauvegardes et sécurité</li>
+          <li>Surveillance de la synchronisation</li>
+          <li>Suivi des demandes et des avis</li>
+          <li>Deux mois offerts pour les trois premières villas</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark">En savoir plus</a>
+      </div>
+    </div>
+
+    <p class="price-foot">
+      Bien supplémentaire : +390 € (290 € en lancement) si vous gérez plusieurs villas.
+      L'abonnement est indissociable de la formule Direct, parce que la synchronisation des calendriers doit être surveillée pour rester fiable.
+      La synchronisation reste indicative : la confirmation des dates relève toujours du propriétaire.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Questions fréquentes</div>
+      <h2>Ce que les propriétaires demandent avant de se lancer.</h2>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Je suis déjà sur Airbnb et ça marche bien. À quoi bon un site ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Justement parce que ça marche. Une partie de vos voyageurs vous découvre sur Airbnb, puis cherche votre villa par son nom pour réserver moins cher ou poser une question. Aujourd'hui ils ne trouvent rien et repartent sur la plateforme, et vous payez la commission une deuxième fois pour un client déjà acquis.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Mes photos ne sont pas terribles, est-ce bloquant ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>On peut démarrer avec vos photos actuelles, retravaillées au recadrage et à la lumière. Mais soyons honnêtes : sur une villa, la photo fait la réservation. Si votre budget le permet, une demi-journée de shooting est le meilleur investissement complémentaire, et je peux vous mettre en relation.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Comment les voyageurs vont-ils trouver mon site ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Au départ, par vous : le lien dans votre annonce quand la plateforme l'autorise, dans votre signature, sur le livret d'accueil, sur vos réseaux et auprès de vos anciens voyageurs. Le référencement naturel prend le relais ensuite, mais comptez plusieurs mois. Un site qui n'attendrait que Google pour se remplir serait une mauvaise promesse.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Est-ce que je peux encaisser directement ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Oui, avec la formule Direct. Le voyageur règle son acompte par carte et l'argent arrive sur votre compte bancaire, sans transiter par nous. Vous fixez librement le montant de l'acompte et vos conditions d'annulation.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Et pendant la saison cyclonique ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Le site affiche vos conditions d'annulation liées aux alertes météo, et vous pouvez fermer des périodes en quelques clics. C'est d'ailleurs un avantage sur les plateformes, dont les politiques d'annulation s'imposent à vous. Sur votre site, les règles sont les vôtres.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Je gère trois villas, faut-il trois sites ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Non, un seul site avec une page par bien et un calendrier distinct pour chacun. Comptez 390 € par bien supplémentaire. C'est plus efficace qu'un site séparé, parce qu'un voyageur qui ne trouve pas ses dates sur l'une bascule naturellement sur l'autre.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <span>Que se passe-t-il si j'arrête l'abonnement ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Le site vous appartient et reste en ligne. Sur la formule Essentiel, vous reprenez simplement les mises à jour à votre charge. Sur la formule Direct, la synchronisation des calendriers ne peut plus être garantie, c'est pourquoi l'abonnement en fait partie.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow on-dark">Premier pas</div>
+      <h2>Audit gratuit de votre annonce.</h2>
+      <p class="lead">Envoyez-moi le lien de votre annonce Airbnb ou Booking. Je vérifie d'abord si votre villa sort sur Google quand on tape son nom — c'est là que se joue l'essentiel — puis je vous renvoie sous 48h ce qui freine vos réservations directes et ce que ça vous coûte. Que vous travailliez avec moi ensuite ou non.</p>
+      <div class="contact-detail"><span class="k">Téléphone &amp; WhatsApp</span>06 90 50 48 87</div>
+      <div class="contact-detail"><span class="k">E-mail</span>p.godran@kreoldigital.fr</div>
+      <div class="contact-detail"><span class="k">Zone d'intervention</span>Guadeloupe · Martinique · Guyane</div>
+    </div>
+
+    <form class="form-card" id="villaForm" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms : clé publique par conception. action assure le repli sans JS. -->
+      <input type="hidden" name="access_key" value="a572736c-6a7c-4c81-b0af-260da2b394c0">
+      <input type="hidden" name="subject" value="Audit gratuit villa — kreoldigital.fr">
+      <input type="hidden" name="from_name" value="Page villas">
+      <input type="hidden" name="origine" value="Page villas">
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+      <div class="form-row">
+        <div class="field">
+          <label for="f-nom">Nom</label>
+          <input id="f-nom" name="nom" type="text" placeholder="Votre nom" required>
+        </div>
+        <div class="field">
+          <label for="f-villa">Nom de la villa</label>
+          <input id="f-villa" name="villa" type="text" placeholder="Ex : Villa Ti Kaz">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="f-mail">E-mail</label>
+          <input id="f-mail" name="email" type="email" placeholder="vous@exemple.com" required>
+        </div>
+        <div class="field">
+          <label for="f-biens">Nombre de biens</label>
+          <select id="f-biens" name="biens">
+            <option>1 villa</option>
+            <option>2 à 3 biens</option>
+            <option>Plus de 3 biens</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-annonce">Lien de votre annonce</label>
+        <input id="f-annonce" name="annonce" type="text" placeholder="https://airbnb.fr/... ou booking.com/...">
+      </div>
+      <div class="field">
+        <label for="f-msg">Où en êtes-vous aujourd'hui ?</label>
+        <textarea id="f-msg" name="message" placeholder="Ex : je loue depuis 3 ans uniquement sur Airbnb, mes anciens clients me redemandent mais je n'ai rien à leur donner..."></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Recevoir mon audit gratuit</button>
+      <p class="form-status" id="villaStatus" role="status" aria-live="polite"></p>
+      <p class="form-legal">Réponse sous 48h. Vos informations servent uniquement à vous répondre,
+        sans inscription à une liste de diffusion.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ RETOUR ACCUEIL ============ -->
+<section class="back-home">
+  <div class="wrap back-home-row">
+    <div>
+      <h3>Vous n'êtes pas hébergeur&nbsp;?</h3>
+      <p>Cette page ne couvre que les villas et locations saisonnières. Restaurants, artisans, agences immobilières et indépendants&nbsp;: la méthode est la même, l'offre est ailleurs.</p>
+    </div>
+    <a href="index.html" class="btn btn-dark back-home-cta">
+      Voir tous nos services
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div>© Kreol'Digital — Prisca Godran. Tous droits réservés.</div>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/59690504887" target="_blank" rel="noopener" aria-label="Nous écrire sur WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.4 1.02 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+  <span>Écrire sur WhatsApp</span>
+</a>
+
+<script>
+/* ---------- Calculateur de commission ---------- */
+(function initCalc(){
+  var prix = document.getElementById('prixNuit');
+  var nuits = document.getElementById('nuits');
+  var taux = document.getElementById('taux');
+  if (!prix || !nuits || !taux) return;
+
+  var PART_DIRECT = 0.25; // hypothèse prudente : 25 % des réservations basculent en direct
+
+  function euros(n){
+    return Math.round(n).toLocaleString('fr-FR') + ' €';
+  }
+
+  function maj(){
+    var p = Number(prix.value);
+    var n = Number(nuits.value);
+    var t = Number(taux.value) / 100;
+
+    var revenus = p * n;
+    var commission = revenus * t;
+    var economie = commission * PART_DIRECT;
+
+    document.getElementById('prixNuitVal').textContent = p + ' €';
+    document.getElementById('nuitsVal').textContent = n + ' nuits';
+    document.getElementById('tauxVal').textContent = Number(taux.value) + ' %';
+    document.getElementById('outCommission').textContent = euros(commission);
+    document.getElementById('outEconomie').textContent = euros(economie);
+
+    var verdict = document.getElementById('verdict');
+    if (economie <= 0) { verdict.textContent = ''; return; }
+
+    var mois = Math.ceil((1290 / economie) * 12);
+    var texte;
+    if (mois <= 12) {
+      texte = 'Sur ces bases, un site Villa Essentiel à 1 290 € est remboursé en <strong>' +
+              mois + ' mois</strong>, puis vous fait gagner ' + euros(economie) + ' chaque année.';
+    } else {
+      texte = 'Sur ces bases, un site Villa Essentiel à 1 290 € est remboursé en <strong>' +
+              mois + ' mois</strong>. Le gain devient intéressant si vous augmentez la part de réservations directes.';
+    }
+    verdict.innerHTML = texte + '<br><span style="font-size:12.5px;opacity:.7">Revenus locatifs estimés : ' +
+                        euros(revenus) + ' par an.</span>';
+  }
+
+  [prix, nuits, taux].forEach(function(el){
+    el.addEventListener('input', maj);
+  });
+  maj();
+})();
+
+/* ---------- Formulaire : envoi via Web3Forms ----------
+   Le <form> conserve action et method : si ce script échoue, le navigateur
+   soumet quand même. Jamais de bouton mort. */
+(function initVillaForm(){
+  var form = document.getElementById('villaForm');
+  if (!form) return;
+
+  var statut = document.getElementById('villaStatus');
+  var bouton = form.querySelector('button[type="submit"]');
+  var libelle = bouton ? bouton.textContent : '';
+
+  function dire(texte, type){
+    if (!statut) return;
+    statut.textContent = texte;
+    statut.className = 'form-status is-' + type;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    dire('Envoi en cours…', 'pending');
+    if (bouton){ bouton.disabled = true; bouton.textContent = 'Envoi…'; }
+
+    var donnees = {};
+    new FormData(form).forEach(function(v, k){ donnees[k] = v; });
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(donnees)
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data.success){
+        form.reset();
+        dire('Demande envoyée. Vous recevez votre audit sous 48h.', 'ok');
+      } else {
+        dire("L'envoi a échoué. Écrivez-nous à p.godran@kreoldigital.fr.", 'error');
+      }
+    })
+    .catch(function(){
+      dire("Connexion impossible. Écrivez-nous à p.godran@kreoldigital.fr ou appelez le 06 90 50 48 87.", 'error');
+    })
+    .finally(function(){
+      if (bouton){ bouton.disabled = false; bouton.textContent = libelle; }
+    });
+  });
+})();
+
+/* ---------- FAQ ---------- */
+(function initFaq(){
+  var questions = document.querySelectorAll('.faq-q');
+  questions.forEach(function(q){
+    var item = q.parentElement;
+    q.setAttribute('aria-expanded', 'false');
+    q.addEventListener('click', function(){
+      var ouvert = item.classList.toggle('open');
+      q.setAttribute('aria-expanded', ouvert ? 'true' : 'false');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
