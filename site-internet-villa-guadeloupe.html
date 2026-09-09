@@ -76,6 +76,9 @@
 
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
+  /* Réserve la hauteur de l'en-tête collant quand on saute à une ancre. */
+  [id]{ scroll-margin-top: 88px; }
+  @media (max-width:900px){ [id]{ scroll-margin-top: 74px; } }
   body{
     font-family: var(--font-body);
     background: var(--paper);
@@ -530,10 +533,10 @@
       <a href="#cout">Ce que vous perdez</a>
       <a href="#inclus">Ce qui est inclus</a>
       <a href="#tarifs">Tarifs</a>
-      <a href="/#faq">Questions</a>
+      <a href="#faq">Questions</a>
       <a href="/">Autres secteurs</a>
     </nav>
-    <a class="nav-cta" href="/#contact">Audit gratuit</a>
+    <a class="nav-cta" href="#contact">Audit gratuit</a>
   </div>
 </header>
 
@@ -545,7 +548,7 @@
       <h1>Votre villa, réservée <em>en direct</em>.</h1>
       <p class="lead">Un site qui capte les voyageurs qui vous cherchent déjà par votre nom, et transforme leur demande en réservation sans passer par la commission des plateformes.</p>
       <div class="hero-actions">
-        <a href="/#contact" class="btn btn-primary">Audit gratuit de mon annonce</a>
+        <a href="#contact" class="btn btn-primary">Audit gratuit de mon annonce</a>
         <a href="#cout" class="btn btn-ghost">Calculer ce que je perds</a>
       </div>
       <div class="hero-price-line">
@@ -822,7 +825,7 @@
           <li>Fiche Google Business reliée</li>
           <li>Textes rédigés et hébergement première année</li>
         </ul>
-        <a href="/#contact" class="btn btn-dark">Demander un devis</a>
+        <a href="#contact" class="btn btn-dark">Demander un devis</a>
       </div>
 
       <div class="price-card price-card--featured">
@@ -842,7 +845,7 @@
           <li>Tarifs et durée minimale par saison</li>
           <li>Aucun logiciel tiers à payer en plus</li>
         </ul>
-        <a href="/#contact" class="btn btn-primary">Demander un devis</a>
+        <a href="#contact" class="btn btn-primary">Demander un devis</a>
       </div>
 
       <div class="price-card">
@@ -861,7 +864,7 @@
           <li>Suivi des demandes et des avis</li>
           <li>Deux mois offerts pour les trois premières villas</li>
         </ul>
-        <a href="/#contact" class="btn btn-dark">En savoir plus</a>
+        <a href="#contact" class="btn btn-dark">En savoir plus</a>
       </div>
     </div>
 
